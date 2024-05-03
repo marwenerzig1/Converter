@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/money"
+            android:title="Conversion Dinar &lt;-&gt; Euro"/>
+        <item
+            android:id="@+id/temp"
+            android:title="Conversion C &lt;-&gt; F"/>
+        <item
+            android:id="@+id/quitter"
+            android:title="Quitter"/>
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+
+

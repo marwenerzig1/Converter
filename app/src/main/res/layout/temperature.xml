@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#DF127F"
+android:orientation="vertical"
+tools:context=".MainActivity">
+
+<TextView
+    style="@style/Widget.Material3.Snackbar.TextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Conversion de Temperature : "
+    android:textColor="#F6F6F6"
+    android:textStyle="bold"
+    android:textColorHint="#F8F8F8"
+    android:textColorLink="#F4F4F4"
+    android:layout_marginLeft="18dp"
+    android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="Ecrire la temperature"
+        android:inputType="number"
+        android:textColorHint="#D5CFCF" />
+
+<RadioGroup
+    android:id="@+id/radioGroup1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="16dp">
+
+    <RadioButton
+        android:id="@+id/conv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Celsius -> Kelvin"
+        android:textColor="#F6F6F6" />
+
+    <RadioButton
+        android:id="@+id/conv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kelvin -> Celsius"
+        android:textColor="#FFFFFF" />
+</RadioGroup>
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:background="#045BA6"
+    android:backgroundTint="#F8EFEF"
+    android:text="Convertir.."
+    android:textColorHighlight="#EDEDED"
+    app:strokeColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="159dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="Résultat"
+        android:textStyle="bold"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/dd" />
+
+</LinearLayout>

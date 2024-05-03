@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DF127F"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/Widget.Material3.Snackbar.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion de Monnaie : "
+        android:textColor="#F6F6F6"
+        android:textColorHint="#F8F8F8"
+        android:textColorLink="#F4F4F4"
+        android:layout_marginLeft="18dp"
+        android:textStyle="bold"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="Ecrire le montant"
+        android:inputType="number"
+        android:textColorHint="#D5CFCF" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp">
+
+        <RadioButton
+            android:id="@+id/conv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Euro -> Dinar Tunisien"
+            android:textColor="#F6F6F6" />
+
+        <RadioButton
+            android:id="@+id/conv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinar Tunisien -> Euro"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="#DF127F"
+        android:backgroundTint="#F8EFEF"
+        android:text="Convertir.."
+        android:textColorHighlight="#EDEDED"
+        app:strokeColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="182dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:text="Résultat"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="227dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/cc" />
+
+</LinearLayout>
